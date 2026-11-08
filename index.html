@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Conecta Verde: cartilha digital interativa sobre lógica, algoritmos e sustentabilidade digital." />
+  <meta name="theme-color" content="#0b201b" />
+  <title>Conecta Verde | Aprenda. Pratique. Transforme.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Conecta Verde, página inicial"><span class="brand-mark">✳</span><span>conecta<span class="brand-accent">verde</span><small>EDUCAÇÃO DIGITAL</small></span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#trilhas">Aprender</a><a href="#laboratorio">Laboratório</a><a href="#quiz">Quiz</a><a href="#avaliacao">Avaliação</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <span class="topbar-tag">PROJETO EDUCATIVO · UNIP</span>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> TECNOLOGIA COM PROPÓSITO</span>
+          <h1>Um mundo mais inteligente começa com <em>boas escolhas.</em></h1>
+          <p>Descubra como a lógica de programação e a sustentabilidade digital podem transformar nosso dia a dia. Aprenda no seu ritmo, resolva desafios e coloque o conhecimento em prática.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#trilhas">Começar a aprender <span>↗</span></a><a class="btn btn-ghost" href="#laboratorio">Explorar os desafios <span>→</span></a></div>
+          <div class="hero-stats"><div><strong>04</strong><span>capítulos</span></div><div><strong>03</strong><span>atividades práticas</span></div><div><strong>100%</strong><span>gratuito</span></div></div>
+        </div>
+        <div class="hero-graphic" role="img" aria-label="Ilustração abstrata de tecnologia conectada à natureza">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="hero-core"><span>✳</span><strong>Conecte ideias.<br/>Cultive o futuro.</strong></div>
+          <div class="float-tag float-tag-a"><span>⌘</span> LÓGICA</div><div class="float-tag float-tag-b"><span>♻</span> SUSTENTABILIDADE</div><div class="float-tag float-tag-c"><span>◎</span> INOVAÇÃO</div>
+          <div class="spark s1">✳</div><div class="spark s2">✳</div><div class="spark s3">✳</div>
+        </div>
+      </div>
+    </section>
+    <section class="progress-section"><div class="container progress-panel"><div><span class="overline">SEU PROGRESSO</span><h2>Uma jornada, um passo de cada vez.</h2><p>Seus avanços ficam salvos neste navegador.</p></div><div class="progress-right"><div class="progress-info"><strong id="progressLabel">0 de 4 capítulos</strong><span id="progressPercent">0%</span></div><div class="progress-track" role="progressbar" aria-label="Capítulos concluídos" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0" id="progressBar"><span id="progressFill"></span></div><button id="resetProgress" class="text-button">Reiniciar progresso</button></div></div></section>
+    <section id="trilhas" class="section container"><div class="section-heading"><div><span class="overline">01 / APRENDA</span><h2>Conhecimento que faz a diferença<span class="period">.</span></h2><p>Quatro capítulos curtos para explorar conceitos importantes, sem precisar de experiência anterior.</p></div></div>
+      <div class="chapter-grid">
+        <article class="chapter-card" data-chapter="1"><div class="chapter-art art-blue"><span class="chapter-number">01</span><div class="art-symbol">⌘</div><span class="mini-pill">DIGITAL</span></div><div class="chapter-body"><span class="chapter-category">CAPÍTULO 01 · 5 MIN</span><h3>Tecnologia no dia a dia</h3><p>Entenda como usamos a tecnologia, seus benefícios e os cuidados para consumir com consciência.</p><button class="chapter-open" data-open="1">Explorar capítulo <span>↗</span></button></div></article>
+        <article class="chapter-card" data-chapter="2"><div class="chapter-art art-green"><span class="chapter-number">02</span><div class="art-symbol">♻</div><span class="mini-pill">PLANETA</span></div><div class="chapter-body"><span class="chapter-category">CAPÍTULO 02 · 6 MIN</span><h3>Sustentabilidade digital</h3><p>Descubra o que é lixo eletrônico e como reduzir, reutilizar e descartar equipamentos corretamente.</p><button class="chapter-open" data-open="2">Explorar capítulo <span>↗</span></button></div></article>
+        <article class="chapter-card" data-chapter="3"><div class="chapter-art art-lime"><span class="chapter-number">03</span><div class="art-symbol">{ }</div><span class="mini-pill">RACIOCÍNIO</span></div><div class="chapter-body"><span class="chapter-category">CAPÍTULO 03 · 6 MIN</span><h3>Lógica e algoritmos</h3><p>Aprenda a transformar problemas em sequências de passos com exemplos simples.</p><button class="chapter-open" data-open="3">Explorar capítulo <span>↗</span></button></div></article>
+        <article class="chapter-card" data-chapter="4"><div class="chapter-art art-purple"><span class="chapter-number">04</span><div class="art-symbol">◎</div><span class="mini-pill">AÇÃO</span></div><div class="chapter-body"><span class="chapter-category">CAPÍTULO 04 · 4 MIN</span><h3>Pequenas ações, grande impacto</h3><p>Adote hábitos que prolongam a vida dos dispositivos e ajudam a proteger seus dados.</p><button class="chapter-open" data-open="4">Explorar capítulo <span>↗</span></button></div></article>
+      </div>
+    </section>
+    <section class="chapter-reader container" id="leitura" hidden aria-live="polite"><div class="reader-header"><span class="overline" id="readerTag"></span><button class="reader-close" id="closeReader">Fechar ✕</button></div><div id="readerContent"></div><div class="reader-footer"><button class="btn btn-primary" id="completeChapter">Concluir capítulo ✓</button><span id="readerStatus"></span></div></section>
+    <section id="laboratorio" class="lab-section"><div class="container"><div class="section-heading light"><div><span class="overline">02 / EXPERIMENTE</span><h2>Aprender é colocar a mão na massa<span class="period">.</span></h2><p>Experimente três atividades interativas. Você pode tentar quantas vezes quiser.</p></div></div>
+      <div class="activity-grid">
+        <div class="activity-card"><span class="activity-icon">➜</span><span class="activity-label">ATIVIDADE 01</span><h3>Robô dos algoritmos</h3><p>Monte uma sequência de comandos para conduzir o robô até a estrela. Cuidado com os obstáculos! Explore diferentes percursos em cinco cenários.</p><div class="robot-level" id="robotLevelName" aria-live="polite">1/5 · Jardim inicial</div><div class="robot-board" id="robotBoard" role="img" aria-label="Tabuleiro 5 por 5 com robô, estrela e obstáculos"></div><div class="commands"><button data-command="up" aria-label="Adicionar comando cima">↑</button><button data-command="left" aria-label="Adicionar comando esquerda">←</button><button data-command="down" aria-label="Adicionar comando baixo">↓</button><button data-command="right" aria-label="Adicionar comando direita">→</button></div><div class="sequence" id="sequence" aria-live="polite">Sua sequência aparecerá aqui.</div><div class="activity-actions"><button class="btn btn-small btn-primary" id="runRobot">Executar</button><button class="btn btn-small btn-outline-dark" id="undoRobot">Desfazer ↶</button><button class="btn btn-small btn-outline-dark" id="clearRobot">Limpar</button><button class="btn btn-small btn-outline-dark" id="nextRobot">Novo caminho ↻</button></div><p class="activity-feedback" id="robotFeedback" aria-live="polite"></p></div>
+        <div class="activity-card"><span class="activity-icon">♻</span><span class="activity-label">ATIVIDADE 02</span><h3>Destino correto</h3><p>Para cada item, escolha o melhor destino. Pense em reutilização, reciclagem e segurança.</p><div class="sort-item"><span id="sortEmoji">📱</span><strong id="sortName">Celular quebrado</strong><small id="sortCounter">Item 1 de 5</small></div><div class="sort-options" id="sortOptions"></div><p class="activity-feedback" id="sortFeedback" aria-live="polite"></p><div class="activity-actions"><button class="btn btn-small btn-outline-dark" id="resetSort">Recomeçar</button><strong id="sortScore">0 acertos</strong></div></div>
+        <div class="activity-card"><span class="activity-icon">◇</span><span class="activity-label">ATIVIDADE 03</span><h3>Complete o algoritmo</h3><p>Organize as etapas para pesquisar uma informação com responsabilidade na internet.</p><div id="orderList" class="order-list"></div><div class="activity-actions"><button class="btn btn-small btn-primary" id="checkOrder">Verificar ordem</button><button class="btn btn-small btn-outline-dark" id="resetOrder">Recomeçar</button></div><p class="activity-feedback" id="orderFeedback" aria-live="polite"></p></div>
+      </div>
+    </div></section>
+    <section id="quiz" class="section container"><div class="section-heading"><div><span class="overline">03 / TESTE SEU CONHECIMENTO</span><h2>O que você aprendeu<span class="period">?</span></h2><p>Responda oito questões e receba seu resultado na hora. Não é necessário criar conta.</p></div></div><div class="quiz-shell"><div class="quiz-top"><div><span id="quizIndex">PERGUNTA 01 DE 08</span><h3 id="quizQuestion"></h3></div><span id="quizTopic" class="topic-pill">CONHECIMENTO</span></div><div class="quiz-track"><span id="quizFill"></span></div><div id="quizOptions" class="quiz-options"></div><div class="quiz-explain" id="quizExplain" hidden></div><div class="quiz-bottom"><span id="quizHint">Selecione a alternativa correta.</span><button class="btn btn-primary" id="quizNext" disabled>Confirmar resposta →</button></div><div id="quizResult" class="quiz-result" hidden></div></div></section>
+    <section class="action-banner"><div class="container action-inner"><div><span class="overline">04 / COLOQUE EM PRÁTICA</span><h2>Seu próximo dispositivo também pode ter um futuro.</h2><p>Antes de descartar: considere o conserto, a doação quando possível e a entrega em pontos apropriados. Apague os dados pessoais dos aparelhos antes da entrega.</p><a class="btn btn-light" href="https://sinir.gov.br/perfis/logistica-reversa/logistica-reversa/eletroeletronicos/" target="_blank" rel="noopener noreferrer">Saiba onde procurar pontos de coleta ↗</a></div><span class="giant-recycle" aria-hidden="true">♻</span></div></section>
+    <section id="avaliacao" class="section container"><div class="section-heading"><div><span class="overline">05 / SUA OPINIÃO IMPORTA</span><h2>Ajude a melhorar o Conecta Verde<span class="period">.</span></h2><p>Conte sua experiência respondendo ao formulário de avaliação.</p></div></div><div class="forms-connect"><strong>Responder pelo Google Forms</strong><p id="googleFormsNotice">O formulário de avaliação será disponibilizado em breve.</p><a class="btn btn-primary" id="googleFormsLink" href="#" target="_blank" rel="noopener noreferrer" hidden>Abrir formulário de avaliação ↗</a><p class="form-note">As respostas serão registradas diretamente no Google Forms.</p></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">✳</span><span>conecta<span class="brand-accent">verde</span><small>EDUCAÇÃO DIGITAL</small></span></a><p>Conhecimento acessível para uma comunidade mais conectada e consciente.</p></div><div><h4>Explore</h4><a href="#trilhas">Capítulos</a><a href="#laboratorio">Atividades</a><a href="#quiz">Quiz</a><a href="#avaliacao">Avaliação</a></div><div><h4>Referências</h4><a href="https://sinir.gov.br/perfis/logistica-reversa/logistica-reversa/eletroeletronicos/" target="_blank" rel="noopener noreferrer">SINIR — Eletroeletrônicos ↗</a><a href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener noreferrer">ODS — ONU ↗</a><p>Projeto educativo de extensão — Ciência da Computação, UNIP. Não é um site oficial da universidade.</p></div></div><div class="container footer-bottom"><span>© 2026 Conecta Verde · Feito para aprender e compartilhar.</span><span>Educação · Tecnologia · Sustentabilidade</span></div></footer>
+</body></html>
